@@ -21,7 +21,7 @@ var imgQuality = 40; //Adjust Quality here
 fs.readdir(dir, (err, files) => {
   files.forEach(file => {
     var ext = path.extname(file);
-    if(ext == '.jpg' || ext == '.png'){ //Change extention if applicable
+    if(ext == '.jpg' || ext == '.png'){ //Change extension if applicable
     	try{
     		sharp(dir+'/'+file).jpeg({ quality: imgQuality }).toBuffer(function(err, buffer) {
 			    fs.writeFile(dir+"/"+file, buffer, function(e) {
