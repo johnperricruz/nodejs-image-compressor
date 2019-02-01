@@ -15,7 +15,8 @@ RUN on console :
 
 
 ```html
-node optimize-image.js
+1. cd path/to/image/files 
+2. node optimize-image.js
 
 ```
 
